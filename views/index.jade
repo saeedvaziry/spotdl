@@ -1,0 +1,31 @@
+html
+head
+	meta(charset='UTF-8')
+	title Free Spotify Downloader
+	link(rel='stylesheet', href='/css/styles.css')
+	link(href='https://fonts.googleapis.com/css?family=Nunito:200,600' rel='stylesheet' type='text/css')
+	script(src='/js/libs/fingerprint2/fingerprint2.min.js')
+	script(src='/js/libs/crypto-js/crypto-js.min.js')
+	script(src='/js/libs/socket.io/socket.io.js')
+	script(src='/js/libs/jquery/jquery.min.js')
+	script(src='/js/scripts.js')
+body
+	div(class='app')
+		div(id='loader')
+		header(class='header')
+			img(src='/images/logo.svg' class='logo' alt='logo')
+			h1(class='title') Free Spotify Downloader
+			p(class='slug') Paste the spotify link here and press enter
+			div(class='form-wrapper')
+				div(class='inner-form')
+					div(class='input-field')
+						input(id='txt-url' class='form-control' type='text' placeholder='https://open.spotify.com/track/14msK7...' autoFocus)
+						button(id='btn-download' class='btn-search' type='button')
+							img(src='/images/download.svg' width='30' height='30' alt='download')
+			div(id="downloading" class="modal" style="display: none;")
+				div(class="box")
+					img(src='/images/downloading.gif' alt="downloading" width="100" height="100")
+					p
+						b Downloading...
+					p
+						button(id="btn-cancel" class="btn btn-danger" type="button") Cancel
