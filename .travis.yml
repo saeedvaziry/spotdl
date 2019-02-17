@@ -9,11 +9,8 @@ cache:
     - "node_modules"
 env:
   - NODE_ENV=production
-before_install:
-  - npm install -g pm2
 install:
   - npm install
 script:
   - npm run lint
-  - pm2 start worker.js
   - npm test
