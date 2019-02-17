@@ -1,4 +1,4 @@
-# spotdl
+# Simple Spotify Downloader
 
 [![Build Status](https://travis-ci.org/saeedvaziry/spotdl.svg?branch=master)](https://travis-ci.org/saeedvaziry/spotdl)
 
