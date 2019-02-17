@@ -7,7 +7,8 @@ services:
 cache:  
   directories:
     - "node_modules"
-sudo: false
+env:
+  - NODE_ENV=production
 before_install:
   - npm install -g pm2
 install:
