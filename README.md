@@ -16,6 +16,8 @@ Also uses <a href="https://github.com/Automattic/kue">Kue</a> by <a href="https:
 
 Run `npm install`
 
+Rename `.env.example` to `.env` and config it.
+
 ## Run
 
 - Run `node server.js` for starting server
